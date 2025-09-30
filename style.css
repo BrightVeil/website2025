@@ -29,16 +29,63 @@
 /* Projects */
 #projects{ background: linear-gradient(90deg, rgba(16,18,21,0.25) 0%, transparent 30%), linear-gradient(90deg, transparent 0%, transparent 40%, rgba(11,11,14,0.2) 60%, rgba(11,11,14,0.6) 100%), url('assets/projects_hero.png'); background-size:cover; background-position:center center; padding-top:16px }
 /* About section */
-#about{padding-top:16px}
+#about{padding-top:16px; padding-bottom:16px}
+.about-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+.about-column {
+  position: relative;
+  padding: 40px 30px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.about-column::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.1;
+  z-index: 1;
+}
+.about-column.foundation::before {
+  background-image: url('assets/BrightVeil_Organic_1C.svg');
+}
+.about-column.innovation::before {
+  background-image: url('assets/BrightVeil_Digital_1C.svg');
+}
+.about-column h2 {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 20px;
+}
+.about-column p {
+  position: relative;
+  z-index: 2;
+  line-height: 1.6;
+}
+@media (max-width: 900px) {
+  .about-columns {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
 /* Contact section */
 #contact{padding-top:16px;position:relative;z-index:1}
 .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px} @media (max-width:900px){.cards{grid-template-columns:1fr}} .project{background:rgba(0,0,0,.4);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:18px}
 .project h3{margin-top:0}
 /* Project links use shared .more style */
 .project .more{ margin:12px 0 0 0; display:block }
-/* About (centered) */
-#about .about-grid{ display:grid; grid-template-columns:1fr; gap:24px; text-align:center; justify-items:center }
-#about .about-grid > div{ max-width:720px }
 /* Contact */
 .contact-wrap{max-width:780px} .contact-blurb{color:var(--muted)} .contact-form{margin-top:12px} .contact-form .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px} @media (max-width:700px){.contact-form .grid{grid-template-columns:1fr}} .contact-form input:not([type='checkbox']),.contact-form textarea{width:100%;padding:12px;border-radius:12px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.02);color:var(--ink)} .contact-form label:not(.consent){display:block;margin:12px 0} .consent{display:inline-flex;gap:10px;align-items:flex-start;flex-wrap:nowrap;max-width:100%} .consent input{margin-top:3px;flex:0 0 auto} .privacy-note{color:var(--muted);font-size:.95rem;margin:6px 0 12px} .privacy-note a{color:var(--brand);text-decoration:none;font-weight:700} .privacy-note a:hover{color:var(--accent)}
 /* Ensure consent text wraps beside the checkbox */
