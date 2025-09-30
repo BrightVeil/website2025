@@ -23,3 +23,4 @@ Notes
 - Content and configuration live in `data.json`.
 - Styles are in `styles.css` and scripts are in `script.js`.
 - To push to GitHub, initialize a repo and add a remote or use the GitHub CLI. See instructions in this README or tell me how you'd like me to proceed.
+# SSH Setup Complete
