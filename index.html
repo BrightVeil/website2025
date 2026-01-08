@@ -6,190 +6,27 @@
   <title>BrightVeil.AI — Under Construction</title>
   <meta name="robots" content="noindex, nofollow" />
   <style>
-    * {
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-    }
-    
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
       min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 20px;
-    }
-    
-    .container {
-      text-align: center;
-      background: white;
-      padding: 60px 40px;
-      border-radius: 10px;
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-      max-width: 600px;
-    }
-    
-    h1 {
-      font-size: 48px;
-      color: #333;
-      margin-bottom: 20px;
-      font-weight: 700;
     }
     
     p {
-      font-size: 18px;
-      color: #666;
-      line-height: 1.6;
+      text-align: center;
+      font-size: 32px;
+      color: white;
+      margin: 0;
+      padding: 40px;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>BrightVeil.AI</h1>
-    <p>is under re-construction</p>
-          </div>
-        </div>
-        <div class="hero-media-wrap">
-          <figure class="hero-media" id="heroFigure" aria-label="Hero imagery">
-            <picture>
-              <source id="heroSrcMobile" media="(max-width: 768px)" srcset="assets/hero_vert.png">
-              <source id="heroSrcDesktop" media="(min-width: 769px)" srcset="assets/hero_horz.png">
-              <img id="heroImg" src="assets/hero_horz.png" alt="A diverse small team collaborating around a laptop in a modern office" loading="eager" />
-            </picture>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- Services -->
-    <section id="services" class="section">
-      <div class="container">
-        <h2>SERVICES</h2>
-        <div class="carousel-wrap" tabindex="0">
-          <button class="car-btn prev" aria-label="Previous" aria-controls="servicesCarousel">&#x2039;</button>
-          <div id="servicesCarousel" class="carousel" aria-label="Services">
-            <article class="card">
-              <figure><img src="assets/carousel/project_managment.png" alt="Project Management"></figure>
-              <p>Clear plan, accountable milestones, and progress updates that keep scope, schedule, and risks visible.</p>
-              <a class="more" href="/services/project-management">Learn more</a>
-            </article>
-            <article class="card">
-              <figure><img src="assets/carousel/uxuidesign.png" alt="UX/UI Design"></figure>
-              <p>Turn ideas into clear, easy to use apps and websites.</p>
-              <a class="more" href="/services/ux-ui-design">Learn more</a>
-            </article>
-            <article class="card">
-              <figure><img src="assets/carousel/document_data_pipeline.png" alt="Document &amp; Data Pipelines"></figure>
-              <p>Capture, extract, validate, and deliver data with end-to-end pipelines for documents and forms.</p>
-              <a class="more" href="/services/document-and-data-pipelines">Learn more</a>
-            </article>
-            <article class="card">
-              <figure><img src="assets/carousel/workflow_autmoation.png" alt="Workflow Automation"></figure>
-              <p>Automate routine workflows so data moves automatically and redundant work disappears.</p>
-              <a class="more" href="/services/workflow-automation">Learn more</a>
-            </article>
-            <article class="card">
-              <figure><img src="assets/carousel/courseware_training.png" alt="Courseware &amp; Training Systems"></figure>
-              <p>From curriculum design to downloadable courseware with hands-on labs and materials your team can use immediately.</p>
-              <a class="more" href="/services/coursework-and-training-systems">Learn more</a>
-            </article>
-          </div>
-          <button class="car-btn next" aria-label="Next" aria-controls="servicesCarousel">&#x203A;</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects" class="section alt">
-      <div class="container">
-        <h2>PROJECTS</h2>
-        <div id="projectsList" class="cards">
-          <article class="project">
-            <h3>Cybersecurity Fundamentals Lab</h3>
-            <p>A self-contained study course with a ready-to-run local lab, aligned to ISC2 Certified in Cybersecurity objectives.</p>
-            <a class="more" href="/projects/cybersecurity-fundamentals-lab">Learn more</a>
-          </article>
-          <article class="project">
-            <h3>Document to Data Pipeline Demo</h3>
-            <p>See scanned PDFs and image uploads turn into validated CSV/JSON through a small, end-to-end pipeline.</p>
-            <a class="more" href="/projects/document-to-data-pipeline-demo">Learn more</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Courseware (hidden for now) -->
-    <section id="courseware" class="section" hidden>
-      <div class="container">
-        <h2>COURSEWARE</h2>
-        <div class="cards" id="coursewareList">
-          <article class="project">
-            <h3>Cybersecurity Fundamentals Lab</h3>
-            <p>Hands-on modules with instructor guides, student handouts, and a ready-to-run environment.</p>
-            <a class="more" href="/courseware/cybersecurity-fundamentals">Learn more</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- About -->
-    <section id="about" class="section">
-      <div class="container">
-        <div class="about-columns">
-          <div class="about-column foundation">
-            <h2>FOUNDATION</h2>
-            <p>Built on solid principles of partnership and community engagement, BrightVeil.AI establishes strong foundations for Oklahoma businesses. We believe in practical solutions that create lasting value, focusing on sustainable growth through thoughtful technology implementation and workforce development initiatives.</p>
-          </div>
-          <div class="about-column innovation">
-            <h2>INNOVATION</h2>
-            <p>Driving forward with cutting-edge digital solutions, we transform traditional workflows through intelligent automation and modern design. Our innovative approach combines project management excellence, intuitive UX/UI design, robust data pipelines, and streamlined workflow automation to propel businesses into the future.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact (with background placeholder) -->
-    <section id="contact" class="section alt has-bg" style="--section-bg: url('assets/contact-bg.webp')">
-      <div class="container contact-wrap">
-        <h2>Contact</h2>
-        <p id="contactBlurb" class="contact-blurb">Tell us what you’re working on—we’ll reply with next steps.</p>
-        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks" class="contact-form">
-          <input type="hidden" name="form-name" value="contact" />
-          <p class="hidden"><label>Don’t fill this out if you're human: <input name="bot-field" /></label></p>
-
-          <div class="grid">
-            <label>Name
-              <input name="name" required />
-            </label>
-            <label>Email
-              <input type="email" name="email" required />
-            </label>
-          </div>
-
-          <label>Message
-            <textarea name="message" rows="6" required></textarea>
-          </label>
-
-          <label class="consent">
-            <input type="checkbox" name="consent" required />
-            <span id="consentLabel">I consent to BrightVeil.AI using this information to respond to my inquiry.</span>
-          </label>
-
-          <p id="privacyNote" class="privacy-note">Don’t include confidential or sensitive data (e.g., passwords, SSNs, medical info). See our <a href="/privacy">Privacy Notice</a>.</p>
-
-          <button type="submit" class="btn btn-primary" id="submitLabel">Send</button>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-row">
-      <small>Oklahoma City, OK | © <span id="year">2025</span> <span id="brandFooter">BrightVeil.AI</span>. All rights reserved.</small>
-    </div>
-  </footer>
-
+  <p>BrightVeil.AI is under re-construction</p>
 </body>
 </html>
